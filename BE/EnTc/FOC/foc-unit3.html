@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOC-Unit III</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style-units.css" />
+    <script src="https://kit.fontawesome.com/033b276b35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="..\Images\CrammerBuddyLogo.png" class="logo" alt="WebsiteLogo" style="width: 240px; height: 70px;">
+        <ul>
+            <li><a href="#"><b>HOME</b></a></li>
+            <li>
+                <a href="#"><b>BE E&TC</b></a>
+                <ul>
+                    <li><a href="#FOC"><b>FOC</b></a></li>
+                    <li><a href="#MC"><b>MC</b></a></li>
+                    <li><a href="#DM"><b>DM</b></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><b>SYLLABUS</b></a></li>
+        </ul>
+    </nav>  
+    <div class="container">
+        <div class="leftnav">
+            <ol>
+                <li><a href="#section-0">Syllabus</a></li>
+                <li>
+                    <a href="#section-1" class="dropdown-btn">Introduction
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#section-1-1">Photodiodes</a>
+                        <a href="#section-1-2">Phototransistors</a>
+                        <a href="#section-1-3">Avalanche Photodiode</a>
+                    </div>
+                </li>
+                <li><a href="#section-2">Requirements from Photodetectors</a></li>
+                <li><a href="#section-3">Material Considerations</a></li>
+                <li>
+                    <a href="#section-4" class="dropdown-btn">Photodiode
+                        <i class="fa fa-caret-down"></i>
+                    </a> 
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#section-5">Photo Transistor</a></li>
+                <li><a href="#section-6">Quantum Efficiency</a></li>
+                <li><a href="#section-7">Responsivity</a></li>
+                <li><a href="#section-8">Long Cutoff Wavelength</a></li>
+                <li><a href="#section-9">Detector Response Time</a></li>
+                <li><a href="#section-10">Noise</a></li>
+                <li><a href="#section-11">Receiver Sensitivity</a></li>
+                <li><a href="#section-12">Bit Error Rate</a></li>
+            </ol>
+        </div>
+        <main>
+            <section class="sections" id="section-0">
+                <h1>Syllabus</h1>
+                <p>
+                    <i>
+                    Introduction, Requirements from optical detectors, Material considerations, Types: P-N, Pin, 
+                    Avalanche photodiode, Photo transistor, Principle of working, Quantum efficiency, Responsivity, 
+                    Long cutoff wavelength, Detector response time, Comparison of photodetectors, Thermal noise, 
+                    Dark current noise, Quantum noise and Receiver sensitivity, Bit error rate.
+                    </i>
+                </p>
+            </section>
+            <section class="sections" id="section-1">
+                <h1>1. Introduction</h1>
+                <p>
+                    Photodetectors are electronic devices that are designed to detect and convert light or optical 
+                    signals into an electrical signal. They play a crucial role in various applications, including 
+                    telecommunications, imaging systems, optical data storage, sensing, and many others. The 
+                    fundamental principle behind photodetectors is the ability to convert photons, which are 
+                    particles of light, into measurable electrical current or voltage.
+                    <br> <br>
+                    Photodetectors are based on the phenomenon known as the photoelectric effect, which was first 
+                    described by Albert Einstein in 1905. According to the photoelectric effect, when light interacts 
+                    with certain materials, it can cause the emission of electrons. This effect forms the basis for 
+                    the operation of photodetectors.
+                    <br> <br>
+                    The key components of a typical photodetector include a photosensitive material, a p-n junction 
+                    or other types of semiconductor structures, and electrical contacts. The photosensitive material, 
+                    often a semiconductor material such as silicon or germanium, absorbs incident light and generates 
+                    electron-hole pairs. The p-n junction or semiconductor structure serves as a means to separate 
+                    and collect these electron-hole pairs.
+                    <br> <br>
+                    When photons strike the surface of the photosensitive material, they transfer their energy to 
+                    electrons, allowing them to break free from their atomic bonds and become free carriers. These 
+                    liberated carriers can then be collected as an electrical current or induce a voltage across the 
+                    device, which can be measured and used for various applications.
+                    <br> <br>
+                    Photodetectors can be categorized into several types based on their working principles and 
+                    materials used. Some common types include:
+                    <br> <br>
+                    <div class="divisions" id="section-1-1"><b>1. Photodiodes:</b></div>
+                    These are the most widely used photodetectors. They are based on p-n junctions and operate in 
+                    reverse bias. When photons are absorbed by the depletion region of the junction, electron-hole 
+                    pairs are generated, leading to a current flow.
+                    <br> <br>
+                    <div class="divisions" id="section-1-2"><b>2. Phototransistors:</b></div>
+                    These devices are similar to photodiodes but incorporate an additional amplification stage. They 
+                    offer higher sensitivity compared to photodiodes and are often used in low-light conditions.
+                    <br> <br>
+                    <div class="divisions" id="section-1-3"><b>3. Avalanche Photodiode (APD)</b></div>
+                    APDs are specialized photodetectors that utilize the avalanche effect to achieve higher levels of 
+                    sensitivity. The avalanche effect is a phenomenon where carriers, generated by absorbed photons, 
+                    can trigger a multiplication process, resulting in a higher current gain.
+                    <br> <br>
+                    The performance of a photodetector is characterized by various parameters, including responsivity 
+                    (the ratio of output current or voltage to incident power), quantum efficiency (the ratio of 
+                    generated carriers to incident photons), response time, noise characteristics, and spectral range.
+                    <br> <br>
+                    So, the photodetectors are essential devices for detecting and converting optical signals into electrical 
+                    signals. They find wide-ranging applications in fields such as telecommunications, imaging, 
+                    sensing, and more. Understanding the principles and operation of different types of 
+                    photodetectors is crucial for harnessing their capabilities effectively.
+                </p>
+            </section>
+            <section class="sections" id="section-2">
+                <h1>2. Requirements from Photodetectors</h1>
+                <p>
+                    The optical signal is weakened and distorted when it hits the detector. Therefore, the 
+                    photodetector must meet very high performance requirements such as:
+                    <br> <br>
+                    <b>Sensitivity:</b>
+                    <br>
+                    Optical detectors must be sensitive to the specific wavelength of light for which they are 
+                    designed.
+                    <br> <br>
+                    <b>High Responsitivity:</b>
+                    <br>
+                    It refers to the ability of an optical detector to convert incident photons into an electrical 
+                    signal. Measured in amps per watt.
+                    <br> <br>
+                    <b>Linearity:</b>
+                    <br>
+                    Optical detectors must exhibit a linear response to changes in light intensity.
+                    <br> <br>
+                    <b>Stability:</b>
+                    <br>
+                    Optical detectors must be stable over time and under changing environmental conditions.
+                    <br> <br>
+                    <b>Noise free operation.</b>
+                    <br> <br>
+                    <b>Long operational life.</b>
+                    <br> <br>
+                    <b>High conversion efficiency or high response.</b>
+                    <br> <br>
+                    <b>Short transit time.</b>
+                    <br> <br>
+                </p>
+            </section>
+            <section id="section-3">
+                <h1>3. Material Considerations</h1>
+                <p>
+                    The material used in the design of photodetectors is a significant concern since it can have a 
+                    substantial impact on their performance characteristics. Some of the most important material 
+                    considerations for photodetectors are as follows:
+                    <br> <br>
+                    <b>Bandgap energy:</b>
+                    <br>
+                    The bandgap energy of the material used in the photodetector determines the wavelength of light 
+                    that can be detected. Materials with larger bandgap energies can detect shorter-wavelength light, 
+                    while materials with smaller bandgap energies can detect longer-wavelength light.
+                    <br> <br>
+                    <b>Responsivity:</b>
+                    <br>
+                    The responsivity of a photodetector is a measure of how efficiently it converts incident light 
+                    into an electrical signal. Materials with high responsivity are desirable for applications that 
+                    require high sensitivity.
+                    <br> <br>
+                    <b>Dark Current</b>
+                    <br>
+                    The dark current of a photodetector is the current that flows through it in the absence of light. 
+                    Materials with low dark current are desirable for applications that require low noise levels.
+                    <br> <br>
+                    <b>Speed:</b>
+                    <br>
+                    The speed of a photodetector is determined by the material's carrier mobility and lifetime. 
+                    Materials with high carrier mobility and short carrier lifetimes are desirable for high-speed 
+                    applications.
+                    <br> <br>
+                    <b>Stability:</b>
+                    <br>
+                    The stability of a photodetector is determined by the material's resistance to aging and 
+                    degradation. Materials with high stability are desirable for applications that require long-term 
+                    reliability.
+                    <br> <br>
+                    <b>Cost:</b>
+                    <br>
+                    The cost of the material used in a photodetector can be an important consideration, particularly 
+                    for mass-produced devices. Materials that are readily available and inexpensive are often preferred.
+                    <br> <br>
+                    Some common materials used in photodetectors include silicon, germanium, gallium arsenide, 
+                    indium gallium arsenide, and mercury cadmium telluride. The choice of material depends on the 
+                    specific application requirements and performance characteristics desired.
+                    <br> <br>
+                    Some common materials used in photodetectors include silicon, germanium, gallium arsenide, 
+                    indium gallium arsenide, and mercury cadmium telluride. The choice of material depends on the 
+                    specific application requirements and performance characteristics desired.
+                </p>
+            </section>
+            <section id="section-4">
+                <h1>4. Photodiode</h1>
+                <p>
+                    A photodiode is a p-n junction or pin semiconductor device that consumes light energy to generate 
+                    electric current. It is also sometimes referred to as a photo-detector, photo-sensor, or light 
+                    detector.
+                    <br> <br>
+                    Photodiodes are specially designed to operate in reverse bias condition. Reverse bias means that 
+                    the p-side of the photodiode is connected to the negative terminal of the battery and n-side is 
+                    connected to the positive terminal of the battery.
+                    <br> <br>
+                    Photodiode is very sensitive to light so when light or photons fall on the photodiode it easily 
+                    converts light into electric current. Solar cell is also known as a large area photodiode because 
+                    it converts solar energy or light energy into electric energy. However, solar cells work only in 
+                    bright light.
+                    <br> <br>
+                    The symbol of the photodiode is similar to the normal p-n junction diode except that it contains 
+                    arrows striking the diode. The arrows striking the diode represent light or photons.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\1-Photodiode.jpg" alt="Photodiode">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.1:</b> <i>Photodiode</i></p>
+                    <br>
+                    <b>4.1. Characteristics of a good photodiode are:</b>
+                    <br>
+                    -Photodiodes should be always operated in reverse bias condition.
+                    <br>
+                    -Applied reverse bias voltage should be low.
+                    <br>
+                    -Generate low noise
+                    <br>
+                    -High gain
+                    <br>
+                    -High response speed
+                    <br>
+                    -High sensitivity to light
+                    <br>
+                    -Low sensitivity to temperature
+                    <br>
+                    -Low Cost
+                    <br>
+                    -Small Size
+                    <br>
+                    -Long Lifetime
+                    <br> <br>
+                    <b>4.2. How does a photodiode work?</b>
+                    <br>
+                    A normal P-N junction diode allows a small amount of electric current under reverse bias 
+                    condition. To increase the electric current under reverse bias conditions, we need to generate 
+                    more minority carriers. 
+                    <br> <br>
+                    The external reverse voltage applied to the P-N junction diode will supply energy to the 
+                    minority carriers but not increase the population of minority carriers.
+                    <br> <br>
+                    However, a small number of minority carriers are generated due to external reverse bias voltage. 
+                    The minority carriers generated at N-side or P-side will recombine in the same material before 
+                    they cross the junction. As a result, no electric current flows due to these charge carriers. For 
+                    example, the minority carriers generated in the P-type material experience a repulsive force from 
+                    the external voltage and try to move towards the N-side. However, before crossing the junction, 
+                    the free electrons recombine with the holes within the same material. As a result, no electric 
+                    current flows.
+                    <br> <br>
+                    To overcome this problem, we need to apply external energy directly to the depletion region to 
+                    generate more charge carriers.
+                    <br> <br>
+                    A special type of diode called photodiode is designed to generate more charge carriers in 
+                    depletion regions. In photodiodes, we use light or photons as the external energy to generate 
+                    charge carriers in depletion regions.
+                    <br> <br>
+                    <b>4.3. Photodiode Operation Modes</b>
+                    <br>
+                    A photodiode can be operated in one of the two modes: photovoltaic mode or photoconductive mode. 
+                    Operation mode selection of the photodiode depends upon the speed requirements of the application 
+                    and the amount of dark current that is tolerable.
+                    <br> <br>
+                    <b>-Photovoltaic Mode:</b>
+                    <br>
+                    In the photovoltaic mode, the photodiode is unbiased. In other words, no external voltage is 
+                    applied to the photodiode under photovoltaic mode.
+                    <br> <br>
+                    In photovoltaic mode, dark current is very low. Photodiodes operated in photovoltaic mode have 
+                    low response speed.
+                    <br> <br>
+                    The photodiodes operated in photovoltaic mode are generally used for low speed applications or 
+                    for detecting low light levels.
+                    <br> <br>
+                    <b>-Photoconductive Mode:</b>
+                    <br>
+                    In photoconductive mode, an external reverse bias voltage is applied to the photodiode.
+                    <br> <br>
+                    Applying a reverse bias voltage increases the width of the depletion region and reduces the 
+                    junction capacitance which results in increased response speed. The reverse bias also increases 
+                    the dark current.
+                    <br> <br>
+                    Photodiodes operated in photoconductive mode have high noise current. This is due to the reverse 
+                    saturation current flowing through the photodiode.
+                    <br> <br>
+                    <b>-Avalanche Mode:</b>
+                    <br>
+                    In avalanche mode, the photodiode is connected with high reverse bias voltage. The high reverse 
+                    voltage increases the depletion width and the potential across it. Due to high potential, the 
+                    electron-hole pair flows with maximum speed hitting more atoms in its path resulting in more 
+                    photocurrent. Therefore, avalanche mode has high internal gain and responsivity.
+                    <br> <br>
+                    <b>4.4. V-I Characteristics of Photodiode</b>
+                    <br>
+                    The VI characteristics curve shows the relationship between the voltage and current of a device. 
+                    The horizontal axis or x-axis represents the voltage while the vertical axis or y-axis represents 
+                    the current through the device. Given below is the characteristic curve for the photodiode.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\2-VI-char-photodiode.jpg" alt="VI char. of Photodiode">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.2:</b> <i>V-I Characterstics of Photodiode</i></p>
+                    <br>
+                    As we know that photodiode operates in reverse bias, therefore the graph is between the reverse 
+                    voltage and the reverse current. The reverse voltage is represented on the negative x-axis while 
+                    the reverse current is represented in microamperes on the negative y-axis.
+                    <br> <br>
+                    The reverse current does not vary with a change in the reverse voltage. However the reverse 
+                    current increases with an increase in the intensity of the incident light. At zero light intensity 
+                    or no light, there is no significant reverse current except for a very small constant current 
+                    called the dark current. By increasing the intensity of light the reverse current increases 
+                    linearly.
+                    <br> <br>
+                    <b>4.5. Types of Photodiodes</b>
+                    <br>
+                    The working operation of all types of photodiodes is the same. Different types of photodiodes are 
+                    developed based on specific applications. For example, PIN photodiodes are developed to increase 
+                    the response speed. PIN photodiodes are used where high response speed is needed.
+                    <br> <br>
+                    The different types of photodiodes are:
+                    <br> <br>
+                    <b>A. P-N Junction Photodiode:</b>
+                    <br>
+                    PN junction photodiodes are the first form of photodiodes. They are the most widely used 
+                    photodiodes before the development of PIN photodiodes. PN junction photodiode is also simply 
+                    referred as photodiode. Nowadays, PN junction photodiodes are not widely used.
+                    <br> <br>
+                    When external light energy is supplied to the p-n junction photodiode, the valence electrons in 
+                    the depletion region gain energy.
+                    <br> <br>
+                    If the light energy applied to the photodiode is greater the band-gap of semiconductor material, 
+                    the valence electrons gain enough energy and break bonding with the parent atom. The valence 
+                    electron which breaks bonding with the parent atom will become a free electron. Free electrons 
+                    move freely from one place to another place by carrying the electric current.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\3-PN-Junction-photodiode.jpg" alt="PN Junction photodiode">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.3:</b> <i>P-N Junction Photodiode</i></p>
+                    <br>
+                    When the valence electron leaves the valence shell an empty space is created in the valence shell 
+                    at which the valence electron left. This empty space in the valence shell is called a hole. Thus, 
+                    both free electrons and holes are generated as pairs. The mechanism of generating electron-hole 
+                    pair by using light energy is known as the inner photoelectric effect.
+                    <br> <br>
+                    The minority carriers in the depletion region experience force due to the depletion region 
+                    electric field and the external electric field. For example, free electrons in the depletion 
+                    region experience repulsive and attractive force from the negative and positive ions present at 
+                    the edge of depletion region at p-side and n-side. As a result, free electrons move towards the 
+                    N-region. When the free electrons reaches n region, they are attracted towards the positive 
+                    terminals of the battery. In the similar way, holes move in opposite direction.
+                    <br> <br>
+                    The strong depletion region electric field and the external electric field increase the drift 
+                    velocity of the free electrons. Because of this high drift velocity, the minority carriers 
+                    (free electrons and holes) generated in the depletion region will cross the p-n junction before 
+                    they recombine with atoms. As a result, the minority carrier current increases.
+                    <br> <br>
+                    When no light is applied to the reverse bias photodiode, it carries a small reverse current due 
+                    to external voltage. This small electric current under the absence of light is called dark 
+                    current. It is denoted by I<sub>λ</sub>.
+                    <br> <br>
+                    In a photodiode, reverse current is independent of reverse bias voltage. Reverse current is mostly 
+                    depends on the light intensity.
+                    <br> <br>
+                    In photodiodes, most of the electric current is carried by the charge carriers generated in the 
+                    depletion region because the charge carriers in depletion region has high drift velocity and low 
+                    recombination rate whereas the charge carriers in n-side or p-side has low drift velocity and high 
+                    recombination rate. The electric current generated in the photodiode due to the application of 
+                    light is called photocurrent.
+                    <br> <br>
+                    The total current through the photodiode is the sum of the dark current and the photocurrent. The 
+                    dark current must be reduced to increase the sensitivity of the device.
+                    <br> <br>
+                    The electric current flowing through a photodiode is directly proportional to the incident number 
+                    of photons.
+                    <br> <br>
+                    <b>B. PIN Photodiode:</b>
+                    <br>
+                    PIN photodiodes are developed from the PN junction photodiodes. The operation of PIN photodiode is 
+                    similar to the PN junction photodiode except that the PIN photodiode is manufactured differently 
+                    to improve its performance.
+                    <br> <br>
+                    The PIN photodiode is developed to increase the minority carrier current and response speed.
+                    <br> <br>
+                    PIN photodiodes generate more electric current than the PN junction photodiodes with the same 
+                    amount of light energy.
+                    <br> <br>
+                    <b>-Layers of PIN Photodiode:</b>
+                    <br>
+                    In PIN photodiode, an addition layer called intrinsic semiconductor is placed between the P-type 
+                    and n-type semiconductor to increase the minority carrier current.
+                    <br> <br>
+                    A PIN photodiode is made of p region and n region separated by a highly resistive intrinsic layer. 
+                    The intrinsic layer is placed between the p region and n region to increase the width of 
+                    depletion region.
+                    <br> <br>
+                    The p-type and n-type semiconductors are heavily doped. Therefore, the p region and n region of 
+                    the PIN photodiode has large number of charge carriers to carry electric current. However, these 
+                    charge carriers will not carry electric current under reverse bias condition.
+                    <br> <br>
+                    On the other hand, intrinsic semiconductor is an undoped semiconductor material. Therefore, the 
+                    intrinsic region does not have charge carriers to conduct electric current.
+                    <br> <br>
+                    Under reverse bias condition, the majority charge carriers in n region and p region moves away 
+                    from the junction. As a result, the width of depletion region becomes very wide. Therefore, 
+                    majority carriers will not carry electric current under reverse bias condition.
+                    <br> <br>
+                    However, the minority carriers will carry electric current because they experience repulsive 
+                    force from the external electric field.
+                    <br> <br>
+                    When light or photon energy is applied to the PIN diode, most part of the energy is observed by 
+                    the intrinsic or depletion region because of the wide depletion width. As a result, a large number 
+                    of electron-hole pairs are generated.
+                    <br> <br>
+                    Due to the electric field applied to pin photodiode the free electrons generated in the intrinsic 
+                    region move towards n-side whereas holes generated in the intrinsic region move towards p-side 
+                    which are attracted to towards the positive and negative terminals of the battery.
+                    <br> <br>
+                    This flow of electron generates electric current thus converting photon or light energy into 
+                    electric energy.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\4-PIN-photodiode.jpg" alt="PIN Photodiode">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.4:</b> <i>PIN Photodiode</i></p>
+                    <br>
+                    <i>
+                    NOTE: The population of minority carriers in PIN photodiode is very large compared to the PN 
+                    junction photodiode. Therefore, PIN photodiode carry large minority carrier current than PN 
+                    junction photodiode.
+                    </i>
+                    <br> <br>
+                    When forward bias voltage is applied to the PIN photodiode, it behaves like a resistor.
+                    <br> <br>
+                    We know that capacitance is directly proportional to the size of electrodes and inversely 
+                    proportional to the distance between electrodes. In PIN photodiode, the p region and n region 
+                    acts as electrodes and intrinsic region acts as dielectric.
+                    <br> <br>
+                    The separation distance between p region and n region in PIN photodiode is very large because of 
+                    the wide depletion width. Therefore, PIN photodiode has low capacitance compared to the PN 
+                    junction photodiode.
+                    <br> <br>
+                    In PIN photodiode, most of the electric current is carried by the charge carriers generated in 
+                    the depletion region. The charge carriers generated in p region or n region carry only a small 
+                    electric current. Therefore, increasing the width of depletion region increases the minority 
+                    carrier electric current.
+                    <br> <br>
+                    <b>-Advantages:</b>
+                    <br>
+                    -Wide bandwidth.
+                    <br>
+                    -High Quantum Efficiency.
+                    <br>
+                    -High Response Speed.
+                    <br> <br>
+                    <b>C. Avalanche Photodiode:</b>
+                    <br>
+                    The diode which uses the avalanche method to provide extra performance as compared to other 
+                    diodes is known as avalanche photodiode.
+                    <br> <br>
+                    These diodes are used to change the signals from optical to electrical. These diodes can be 
+                    operated in high reverse bias. The avalanche photodiode symbol is similar to the Zener diode.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\5-Avalanche-photodiode.jpg" alt="Avalanche Photodiode Symbol">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.5:</b> <i>Avalanche Photodiode Symbol</i></p>
+                    <br>
+                    <b>-Construction</b>
+                    <br>
+                    The construction of both the PIN photodiode and Avalanche photodiode is similar. This diode 
+                    includes two heavily doped & two lightly doped regions. Here, heavily doped regions are P+ & N+ 
+                    whereas lightly doped regions are I & P.
+                    <br> <br>
+                    In the intrinsic region, the depletion layer width is fairly thinner in this diode as compared to 
+                    the PIN photodiode. Here, the p+ region works like the anode whereas the n+ region acts as the 
+                    cathode.
+                    <br> <br>
+                    As compared to other photodiodes, this diode works in a high reverse bias condition. So this 
+                    allows avalanche multiplication of the charge carriers formed through the light impact or photon. 
+                    The avalanche action allows the gain of the photodiode to be enhanced several times to provide a 
+                    high range of sensitivity.
+                    <br> <br>
+                    <b>-Working Principle and Operation</b>
+                    <br>
+                    Avalanche breakdown occurs mainly once the photodiode is subjected to maximum reverse voltage. 
+                    This voltage enhances the electric field beyond the depletion layer. When incident light 
+                    penetrates the p+ region then it gets absorbed within the extremely resistive p region then 
+                    electron-hole pairs are generated.
+                    <br> <br>
+                    Charge carriers drift including their saturation velocity to the PN+ region wherever a high 
+                    electric field exists. When the velocity is highest, then charge carriers will collide through 
+                    other atoms & produce new electron-hole pairs. A huge charge carrier’s pair will result in high 
+                    photocurrent.
+                    <br> <br>
+                    This diode operation can be done in a depleted mode completely. However, they can also work in 
+                    the Geiger mode in addition to the linear avalanche mode. In this type of operation mode, the 
+                    photodiode can be operated at the above breakdown voltage. At present, another mode is launched 
+                    namely “Sub-Geiger mode”.
+                    <br> <br>
+                    <b>-Avalanche Photodiode Characterstics</b>
+                    <br>
+                    Avalanche photodiodes are highly sensitive, high-speed-based diodes which use an internal gain 
+                    method that works through applying a reverse voltage. As compared to PIN type photodiode, these 
+                    diodes measure low range light so used in different applications where high sensitivity is 
+                    required like measurement of optical distance and optical communication for long-distance.
+                    <br> <br>
+                    There are different avalanche photodiode families which are designed mainly for detecting short 
+                    wavelengths otherwise near-infrared.
+                    <br> <br>
+                    <b>-Difference between Avalanche Photodiode and PIN Photodiode</b>
+                    <br> <br>
+                    <table>
+                        <tr>
+                            <th><b>Avalanche Photodiode</b></th>
+                            <th><b>PIN Photodiode</b></th>
+                        </tr>
+                        <tr>
+                            <td>
+                            1. Avalanche diode includes four layers like P+, I, P & N+.
+                            </td>
+                            <td>
+                            1. PIN diode includes four layers like P+, I & N+.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            2. Response time is very high.
+                            </td>
+                            <td>
+                            2. Response time is very low.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            3. Output current is low.
+                            </td>
+                            <td>
+                            3. The multiplication of carrier current can cause amplifier current value.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            4. Internal gain is 200 dB.
+                            </td>
+                            <td>
+                            4. Internal gain is insignificant.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            5. Sensitiviy is high.
+                            </td>
+                            <td>
+                            5. Sensitivity is low.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            6. High noise.
+                            </td>
+                            <td>
+                            6. Low noise.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            7. The reverse bias voltage is very high.
+                            </td>
+                            <td>
+                            7. The reverse bias voltage is very low.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            8. High-temperature stability.
+                            </td>
+                            <td>
+                            8. Low-temperature stability.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            9. The amplifier is not necessary because of the available gain.
+                            </td>
+                            <td>
+                            9. The amplifier is mandatory due to not available gain.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>-Advantages</b>
+                    <br>
+                    -It can sense low-intensity light
+                    <br>
+                    -It has very high sensitivity.
+                    <br>
+                    -It provides a high level of signal gain.
+                    <br>
+                    -It provides greater SNR (Signal to Noise) ratio.
+                    <br>
+                    -It has s very fast response time.
+                    <br> <br>
+                    <b>-Disdvantage</b>
+                    <br>
+                    Generates high level of noise than a PN photodiode
+                    <br> <br>
+                </p>
+            </section>
+            <section id="section-5">
+                <h1>5. Photo Transistor</h1>
+                <p>
+                    The photodiode and phototransistor both convert the light energy into the electrical energy. A 
+                    phototransistor is a three-layer semiconductor device with a light-sensitive base region that 
+                    converts light into current flowing between the collector and emitter regions.But phototransistor 
+                    is mostly preferred over the photodiode because of their following advantages.
+                    <br> <br>
+                    -The current gain in the phototransistor is more than the phototransistor even if the same amount 
+                    of light strike on it.
+                    <br>
+                    -The sensitivity of the phototransistor is higher than the photodiode.
+                    <br>
+                    -The photodiode can be converted into the phototransistor by removing their emitter terminals.
+                    <br> <br>
+                    The response time of the photodiode is much higher than the phototransistor. The output current 
+                    of the photodiode is in microamperes, and it can switch on or off in nanoseconds. While the 
+                    response time of the phototransistor is in microseconds and it provides current in milliamperes.
+                    <br> <br>
+                    It is similar to an ordinary transistor, except it lacks a base terminal. Instead of base 
+                    current, it uses light energy as input.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\6-Photo-Transistor.jpg" alt="Photo Transistor">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.6:</b> <i>Photo Transistor Symbol</i></p>
+                    <br>
+                    <b>5.1. Construction:</b>
+                    Phototransistors are similar to ordinary transistors, historically made of germanium and silicon. 
+                    A lens is placed on the small hole at the collector-base junction to focus light. Nowadays, they 
+                    are made of gallium and arsenides for better light sensitivity.
+                    <br> <br>
+                    <img src="..\Images\FOC-Unit3\7-Inside-Photo-Transistor.jpg" alt="Inside Photo Transistor">
+                    <br> <br>
+                    <p class="figure-description"><b>Fig. 3.7:</b> <i>Inside Photo Transistor</i></p>
+                    <br>
+                    <b>5.2. Working:</b>
+                    <br>
+                    The phototransistor is a semiconductor device composed of semiconductor material. When light 
+                    strikes the material, it generates free electrons and holes within the semiconductor, resulting 
+                    in a current flow in the base region. The base of the phototransistor is primarily used for 
+                    biasing the transistor. In an NPN transistor, the collector is made positive relative to the 
+                    emitter, while in a PNP transistor, the collector is kept negative.
+                    <br> <br>
+                    The light entering the base region of the phototransistor creates electron-hole pairs, 
+                    predominantly during reverse biasing. The movement of electrons under the influence of the 
+                    electric field generates current in the base region. The base current injects the electrons into 
+                    the emitter region. However, a significant drawback of phototransistors is their limited 
+                    frequency response.
+                    <br> <br>
+                    <b>5.3. Photodiode Vs. Phototransistor:</b>
+                    <br>
+                    Phototransistors have higher current gain and sensitivity compared to photodiodes whereas 
+                    photodiodes can be converted into phototransistors by removing their emitter terminals. 
+                    Photodiodes have faster response times in nanoseconds but provide microamperes of current, while 
+                    phototransistors have microseconds of response time and milliamperes of current.
+                    <br> <br>
+                    <b>5.4. Photo Transistor Characterstics</b>
+                    <br>
+                    -Low-cost visible and near-IR photodetection.
+                    <br>
+                    -Available with gains ranging from 100 to over 1500.
+                    <br>
+                    -Moderately fast response times.
+                    <br>
+                    -Available in various package types including epoxy-coated, transfer-molded, and surface mounting 
+                    technology.
+                    <br>
+                    -Electrical characteristics similar to signal transistors.
+                    <br> <br>
+                    <b>5.5. Advantages of Phototransistor:</b>
+                    <br>
+                    -Produces higher current than photodiodes.
+                    <br>
+                    -Relatively inexpensive, simple, and small enough to fit multiple units on a single integrated 
+                    computer chip.
+                    <br>
+                    -Very fast, providing nearly instantaneous output.
+                    <br>
+                    -Capable of producing voltage, unlike photo-resistors.
+                    <br> <br>
+                    <b>5.6. Disadvantages of Phototransistor:</b>
+                    <br>
+                    -Silicon-based phototransistors have voltage limitations below 1,000 Volts.
+                    <br>
+                    -More susceptible to surges, spikes, and electromagnetic energy.
+                    <br>
+                    -Restricted electron mobility compared to devices like electron tubes.
+                    <br> <br>
+                    <b>5.7. Applications:</b>
+                    <br>
+                    -Punch-card readers.
+                    <br>
+                    -Security systems.
+                    <br>
+                    -Encoders for measuring speed and direction.
+                    <br>
+                    -IR detectors and photoelectric controls.
+                    <br>
+                    -Computer logic circuitry.
+                    <br>
+                    -Relays.
+                    <br>
+                    -Lighting control for highways and other applications.
+                    <br>
+                    -Level indication.
+                    <br>
+                    -Counting systems.
+                </p>
+            </section>
+            <section id="section-6">
+                <h1>6. Quantum efficiency</h1>
+                <p>
+                    Quantum efficiency (QE) is a key performance parameter used to quantify the efficiency of a 
+                    photodetector in converting incident photons into electric current. It represents the ratio of 
+                    the number of electron-hole pairs generated by absorbed photons to the total number of incident 
+                    photons.
+                    <br> <br>
+                    Mathematically, quantum efficiency (QE) is expressed as:
+                    <br> <br>
+                    QE = (Number of electron-hole pairs generated) / (Number of incident photons)
+                    <br> <br>
+                    A high quantum efficiency indicates that a larger proportion of incident photons are successfully 
+                    converted into electron-hole pairs, resulting in a stronger photocurrent.
+                    <br> <br>
+                    The quantum efficiency of a photodetector is influenced by various factors, including the 
+                    absorption properties of the material, the bandgap energy, and the design of the detector. 
+                    <br> <br>
+                    Quantum efficiency is an essential parameter to consider when selecting or designing a 
+                    photodetector for specific applications. A higher quantum efficiency translates to a more 
+                    sensitive and efficient photodetector, making it suitable for applications where low light levels 
+                    or high detection accuracy are required, such as imaging, spectroscopy, and telecommunications.
+                </p>
+            </section>
+            <section id="section-7">
+                <h1>7. Responsivity</h1>
+                <p>
+                    Responsivity is another important parameter used to characterize the performance of a 
+                    photodetector. It represents the electrical output (typically current or voltage) produced by 
+                    the photodetector for a given amount of incident optical power.
+                    <br> <br>
+                    Mathematically, responsivity (R) is expressed as:
+                    <br> <br>
+                    <i>R = (Electrical output) / (Incident optical power)</i>
+                    <br> <br>
+                    Responsivity is typically measured in units of Ampere per Watt (A/W) or Volts per Watt (V/W), 
+                    indicating the amount of electrical output generated per unit of incident optical power.
+                    <br> <br>
+                    Responsivity takes into account the efficiency of the photodetector in converting incident 
+                    optical power into an electrical signal. It considers both the quantum efficiency (QE) of the 
+                    photodetector and the collection efficiency of the generated carriers.
+                    <br> <br>
+                    Responsivity is another important parameter used to characterize the performance of a 
+                    photodetector. It represents the electrical output (typically current or voltage) produced by the 
+                    photodetector for a given amount of incident optical power.
+                    <br> <br>
+                    Mathematically, responsivity (R) is expressed as:
+                    <br> <br>
+                    R = (Electrical output) / (Incident optical power)
+                    <br> <br>
+                    Responsivity is typically measured in units of Ampere per Watt (A/W) or Volts per Watt (V/W), 
+                    indicating the amount of electrical output generated per unit of incident optical power.
+                    <br> <br>
+                    Responsivity takes into account the efficiency of the photodetector in converting incident optical 
+                    power into an electrical signal. It considers both the quantum efficiency (QE) of the photodetector 
+                    and the collection efficiency of the generated carriers.
+                    <br> <br>
+                    The responsivity of silicon photodiode is a measure of sensitivity to light. It is defined as 
+                    ratio of photocurrent (Ip) to incident light power P at given wavelength.
+                    <br> <br>
+                    <i>Responsivity, Rλ = Ip/P</i>
+                    <br> <br>
+                    In other words, it is measure of the effectiveness of conversion of light power into electric 
+                    current. It varies with the wavelength of incident light, applied reverse bias and temperature.
+                </p>
+            </section>
+            <section id="section-8">
+                <h1>8. Long Cutoff Wavelength</h1>
+                <p>
+                    A cut of the wavelength of any photodetector can be defined as if any particular semiconductor 
+                    can be absorbed photon over a limited wavelength range. The highest bandwidth is known as cut-off 
+                    wavelength.
+                    <br> <br>
+                    The cutoff wavelength is determined by the material properties and design of the photodetector. 
+                    Different types of photodetectors have varying cutoff wavelengths based on their operating 
+                    principles and the materials used.
+                    <br> <br>
+                    Cut off wavelength is determined by band gap energy Eg of a material.
+                    <br> <br>
+                    Cut of wavelength = hc / Eg  = 1.24 / Eg  
+                    <br> <br>
+                    Where,
+                    <br> <br>
+                    Eg  = Electron volts (eV) 
+                    <br> <br>
+                    A typical value of cut of wavelength for silicon is 1.06 micrometer and germanium is 1.6 
+                    micrometer.
+                    <br> <br>
+                    It's important to note that the cutoff wavelength can vary depending on factors such as the 
+                    material composition, doping levels, and device design. In some cases, the cutoff wavelength can 
+                    be extended by incorporating additional layers or structures, such as multi-layer structures or 
+                    quantum well structures.
+                    <br> <br>
+                    When selecting a photodetector for a specific application, it is crucial to consider the desired 
+                    wavelength range of operation and ensure that the photodetector's cutoff wavelength is compatible 
+                    with the target wavelength range. Using a photodetector with a long cutoff wavelength enables the 
+                    detection of light in the desired wavelength range, expanding the range of applications, such as 
+                    spectroscopy, telecommunications, remote sensing, and thermal imaging.
+                </p>
+            </section>
+            <section id="section-9">
+                <h1>9. Detector Response Time</h1>
+                <p>
+                    Detector response time, also referred to as the rise time or the time response, is a crucial 
+                    parameter that characterizes the speed at which a photodetector can respond to changes in 
+                    incident light intensity. It quantifies how quickly the photodetector can convert the optical 
+                    input signal into an electrical output signal.
+                    <br> <br>
+                    The response time of a photodetector is primarily determined by the intrinsic properties of the 
+                    detector and the dynamics of the charge carriers generated by the incident light. 
+                    <br> <br>
+                    The response time is typically measured as the time required for the photodetector's electrical 
+                    output signal to reach a certain percentage (e.g., 90% or 95%) of its final value in response to 
+                    a step change in incident light intensity.
+                    <br> <br>
+                    The choice of photodetector technology and design parameters can significantly impact the 
+                    response time. Different types of photodetectors, such as avalanche photodiodes (APDs), 
+                    photomultiplier tubes (PMTs), and solid-state photodiodes, have varying response times due to 
+                    their distinct operating principles and structures.
+                    <br> <br>
+                    It is important to consider the response time requirements for specific applications. For 
+                    instance, high-speed optical communication systems and laser-based applications often require 
+                    photodetectors with fast response times to accurately capture rapidly changing light signals. On 
+                    the other hand, in applications where slower variations in light intensity are expected, response 
+                    time may be less critical.
+                </p>
+            </section>
+            <section id="section-10">
+                <h1>10. Noise</h1>
+                <p>
+                    <b>Noise:</b> 
+                    <br>
+                    In a communication system, noise refers to unwanted disturbances that can interfere with the 
+                    received signal. In optical fiber communication systems, there are three main types of noise 
+                    that can affect the performance: thermal noise, dark current noise, and quantum noise.
+                    <br> <br>
+                    <b>10.1. Thermal Noise:</b>
+                    <br> <br>
+                    Thermal noise arises from the random motion of electrons, which is present at any finite 
+                    temperature. 
+                    <br> <br>
+                    The thermal noise current can be calculated using the formula:
+                    <br> <br>
+                    i<sub>t</sub><sup>2</sup> = 4KTBR
+                    <br> <br>
+                    where:
+                    <br> <br>
+                    K is Boltzmann's constant,
+                    <br> <br>
+                    T is the absolute temperature,
+                    <br> <br>
+                    B is the post-detection bandwidth of the system.
+                    <br> <br>
+                    <b>10.2. Dark Noise:</b>
+                    <br>
+                    Even when there is no optical power incident on the photodetector, a small reverse leakage 
+                    current called dark current still flows through the device terminals. This dark current 
+                    contributes to the overall system noise and introduces random fluctuations around the average 
+                    photocurrent flow. 
+                    <br> <br>
+                    The dark current noise can be expressed as:
+                    <br> <br>
+                    i<sub>d</sub><sup>2</sup> = 2eBId
+                    <br> <br>
+                    where:
+                    <br> <br>
+                    e is the charge on an electron,
+                    <br> <br>
+                    B is the post-detection bandwidth of the system.
+                    <br> <br>
+                    I<sub>d</sub> is the dark current.
+                    <br> <br>
+                    <b>10.3. Quantum Noise:</b>
+                    <br>
+                    Quantum noise, also known as shot noise, is caused by the discrete nature of electrons. It arises 
+                    from the statistical production and collection of photoelectrons. The quantum noise can be given by:
+                    <br> <br>
+                    i<sub>s</sub><sup>2</sup> = 2eBIp
+                    <br> <br>
+                    where:
+                    <br> <br>
+                    e is the charge on an electron,
+                    <br> <br>
+                    B is the post-detection bandwidth of the system,
+                    <br> <br>
+                    Ip is the photocurrent.
+                    <br> <br>
+                    In addition to these types of noise, other factors such as amplifier noise, receiver noise, and 
+                    environmental interference can also contribute to the overall noise in an optical fiber 
+                    communication system.
+                    <br> <br>
+                    Reducing noise and improving the signal-to-noise ratio (SNR) is crucial for achieving reliable 
+                    and high-quality communication. Various techniques such as signal amplification, filtering, and 
+                    advanced modulation schemes are employed to mitigate the impact of noise and enhance the 
+                    performance of optical fiber communication systems.
+                </p>
+            </section>
+            <section id="section-11">
+                <h1>11. Receiver Sensitivity</h1>
+                <p>
+                    Receiver sensitivity in photodetectors refers to the minimum optical power level required for 
+                    the photodetector to reliably detect and convert incoming light signals into electrical signals 
+                    with a specified bit error rate (BER). It is a crucial parameter that determines the ability of 
+                    a photodetector to detect weak optical signals and plays a key role in the overall performance 
+                    of optical communication systems.
+                    <br> <br>
+                    Receiver sensitivity is influenced by several factors. Firstly, the responsivity of the 
+                    photodetector plays a significant role. Higher responsivity allows for stronger electrical 
+                    signals to be generated for a given optical input, improving the receiver sensitivity. 
+                    Additionally, noise sources, such as thermal noise, dark current noise, and shot noise, can 
+                    degrade the receiver sensitivity. Minimizing noise through proper design, signal amplification, 
+                    and noise reduction techniques helps improve the receiver sensitivity.
+                    <br> <br>
+                    The bandwidth of the photodetector and the receiver circuitry also affect the receiver 
+                    sensitivity. A wider bandwidth allows for the detection of a broader range of optical signals 
+                    but may increase noise levels. Balancing the bandwidth with noise considerations is important 
+                    for optimizing receiver sensitivity.
+                    <br> <br>
+                    By achieving higher receiver sensitivity, the photodetector can detect weaker optical signals, 
+                    leading to increased communication range, improved data transmission rates, and enhanced system 
+                    performance. It enables reliable and accurate detection of optical signals in various applications 
+                    such as optical fiber communications, remote sensing, and imaging systems.
+                </p>
+            </section>
+            <section id="section-12">
+                <h1>12. Bit Error Rate</h1>
+                <p>
+                    It is defined as the ratio of the number of bits received in error to the total number of bits 
+                    transmitted.
+                    <br> <br>
+                    BER=Ne/Nt
+                    <br> <br>
+                    N<sub>e</sub> = the number of errors
+                    <br> <br>
+                    N<sub>t</sub>=total number of transmitted pulses during time ‘t’.
+                    <br> <br>
+                    It is the probability of a bit being incorrectly received.
+                    <br> <br>
+                    BER is expressed as a percentage or as a decimal number between 0 and 1.For example, a BER of 
+                    0.01means that for every 100 bits transmitted,one bit is received in error.
+                    <br> <br>
+                    BER is affected by various factors such as noise,interference,attenuation and distortion in the communication channel. The lower the BER, the better the quality of transmission.
+                    <br> <br>
+                    BER depends on SNR(signal to noise ratio)
+                    <br> <br>
+                    Higher values of BER indicate degradation in the performance of the receiver.
+                    <br> <br>
+                    The Bit Error Rate (BER) in a photodetector refers to the rate at which errors occur in the 
+                    received electrical signal as a result of noise, distortion, and other impairments. It is a 
+                    critical metric that quantifies the accuracy of data transmission and reception in communication 
+                    systems utilizing photodetectors.
+                    <br> <br>
+                    The BER is influenced by various factors related to the photodetector and the overall system. 
+                    Noise sources such as thermal noise, dark current noise, and shot noise contribute to the 
+                    occurrence of errors in the received signal. Minimizing noise through proper design, noise 
+                    reduction techniques, and optimizing the signal-to-noise ratio (SNR) helps to reduce the BER.
+                </p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/"><img src="..\Vectors\instagram-icon.svg" class="icon" alt="Insta-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://www.facebook.com/"><img src="..\Vectors\facebook-icon.svg" class="icon" alt="Fb-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://telegram.org/"><img src="..\Vectors\telegram-icon.svg" class="icon" alt="Telegram-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTHVwtJVsGjXHjQGTFLgpdDsQxlzJQntxQnzvFxzzCwjpqGzmCttxTBlqqWbbzBLCrVTsB"><img src="..\Vectors\gmail-icon.svg" class="icon" alt="GMail-Logo" style="width: 25px; height: 25px;"></a>
+        </div>
+        <div class="redirects">
+            <ul>
+            <b>Insight</b>
+                <div class="footer-list">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Credits</a></li>
+                </div>
+            </ul>
+            <ul>
+                <b>Discover</b>
+                <div class="footer-list">
+                    <li><a href="#">Privacy & Policy</a></li>                        
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Forums</a></li>
+                </div>
+            </ul>
+        </div>
+        <p class="copyright">&copy CrammerBuddy 2023, All Rights Reserved.</p>
+    </footer>
+    <script src="subject-units.js"></script>
+</body>
+</html>
