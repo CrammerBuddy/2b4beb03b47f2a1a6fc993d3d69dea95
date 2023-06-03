@@ -5,31 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOC-Unit III</title>
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="style-units.css" />
+    <link rel="stylesheet" href="../../../static/styles/navbar.css" />
+    <link rel="stylesheet" href="../../../static/styles/footer.css" />
+    <link rel="stylesheet" href="../../../static/styles/style-units.css" />
     <script src="https://kit.fontawesome.com/033b276b35.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <img src="..\Images\CrammerBuddyLogo.png" class="logo" alt="WebsiteLogo" style="width: 240px; height: 70px;">
+        <img src="../../../static/assets/logos/CrammerBuddyLogo.png" class="logo" alt="WebsiteLogo" style="width: 240px; height: 70px;">
         <ul>
-            <li><a href="#"><b>HOME</b></a></li>
+            <li><a href="../../../index.html"><b>HOME</b></a></li>
             <li>
-                <a href="#"><b>BE E&TC</b></a>
+                <a href="#"><b>B.E. E&TC</b></a>
                 <ul>
-                    <li><a href="#FOC"><b>FOC</b></a></li>
-                    <li><a href="#MC"><b>MC</b></a></li>
-                    <li><a href="#DM"><b>DM</b></a></li>
+                    <li><a href="../subject-FOC.html"><b>FOC</b></a></li>
+                    <li><a href="../subject-MC.html"><b>MC</b></a></li>
+                    <li><a href="../subject-DM.html"><b>DM</b></a></li>
                 </ul>
             </li>
-            <li><a href="#"><b>SYLLABUS</b></a></li>
+            <li><a href="#"><b>SYLLABUS</b></a>
+                <ul>
+                    <li><a href="../subject-FOC.html"><b>FOC</b></a></li>
+                    <li><a href="../syllabus-MC.html"><b>MC</b></a></li>
+                    <li><a href="../syllabus-DM.html"><b>DM</b></a></li>
+                </ul>
+            </li>
         </ul>
     </nav>  
     <div class="container">
         <div class="leftnav">
             <ol>
-                <li><a href="#section-0">Syllabus</a></li>
+                <a href="#section-0">&nbsp Syllabus</a>
                 <li>
                     <a href="#section-1" class="dropdown-btn">Introduction
                         <i class="fa fa-caret-down"></i>
@@ -47,23 +53,47 @@
                         <i class="fa fa-caret-down"></i>
                     </a> 
                     <div class="dropdown-container">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#section-4-1">Characteristics of Photodiode</a>
+                        <a href="#section-4-2">How does a photodiode work?</a>
+                        <a href="#section-4-3">Photodiode Operation Modes</a>
+                        <a href="#section-4-4">V-I Characteristics</a>
+                        <a href="#section-4-5">Types of Photodiodes</a>
                     </div>
                 </li>
-                <li><a href="#section-5">Photo Transistor</a></li>
+                <li>
+                    <a href="#section-5" class="dropdown-btn">Photo Transistor
+                        <i class="fa fa-caret-down"></i>
+                    </a> 
+                    <div class="dropdown-container">
+                        <a href="#section-5-1">Construction</a>
+                        <a href="#section-5-2">Working</a>
+                        <a href="#section-5-3">Photodiode vs Phototransistor</a>
+                        <a href="#section-5-4">Phototransistor Characterstics</a>
+                        <a href="#section-5-5">Advantages</a>
+                        <a href="#section-5-6">Disadvantages</a>
+                        <a href="#section-5-7">Applications</a>
+                    </div>
+                </li>
                 <li><a href="#section-6">Quantum Efficiency</a></li>
                 <li><a href="#section-7">Responsivity</a></li>
                 <li><a href="#section-8">Long Cutoff Wavelength</a></li>
                 <li><a href="#section-9">Detector Response Time</a></li>
-                <li><a href="#section-10">Noise</a></li>
+                <li>
+                    <a href="#section-10" class="dropdown-btn">Photodiode
+                        <i class="fa fa-caret-down"></i>
+                    </a> 
+                    <div class="dropdown-container">
+                        <a href="#section-10-1">Thermal Noise</a>
+                        <a href="#section-10-2">Dark Noise</a>
+                        <a href="#section-10-3">Quantum Noise</a>
+                    </div>
+                </li>
                 <li><a href="#section-11">Receiver Sensitivity</a></li>
                 <li><a href="#section-12">Bit Error Rate</a></li>
             </ol>
         </div>
         <main>
-            <section class="sections" id="section-0">
+            <div class="cBox" id="section-0">
                 <h1>Syllabus</h1>
                 <p>
                     <i>
@@ -73,8 +103,8 @@
                     Dark current noise, Quantum noise and Receiver sensitivity, Bit error rate.
                     </i>
                 </p>
-            </section>
-            <section class="sections" id="section-1">
+            </div>
+            <div class="cBox" id="section-1">
                 <h1>1. Introduction</h1>
                 <p>
                     Photodetectors are electronic devices that are designed to detect and convert light or optical 
@@ -101,17 +131,18 @@
                     <br> <br>
                     Photodetectors can be categorized into several types based on their working principles and 
                     materials used. Some common types include:
-                    <br> <br>
-                    <div class="divisions" id="section-1-1"><b>1. Photodiodes:</b></div>
+                    <br>
+                </p>
+                <div class="sub-cBox" id="section-1-1"><b>1. Photodiodes:</b> <br>
                     These are the most widely used photodetectors. They are based on p-n junctions and operate in 
                     reverse bias. When photons are absorbed by the depletion region of the junction, electron-hole 
                     pairs are generated, leading to a current flow.
-                    <br> <br>
-                    <div class="divisions" id="section-1-2"><b>2. Phototransistors:</b></div>
+                </div>
+                <div class="sub-cBox" id="section-1-2"><b>2. Phototransistors:</b> <br>
                     These devices are similar to photodiodes but incorporate an additional amplification stage. They 
                     offer higher sensitivity compared to photodiodes and are often used in low-light conditions.
-                    <br> <br>
-                    <div class="divisions" id="section-1-3"><b>3. Avalanche Photodiode (APD)</b></div>
+                </div>
+                <div class="sub-cBox" id="section-1-3"><b>3. Avalanche Photodiode (APD):</b> <br>
                     APDs are specialized photodetectors that utilize the avalanche effect to achieve higher levels of 
                     sensitivity. The avalanche effect is a phenomenon where carriers, generated by absorbed photons, 
                     can trigger a multiplication process, resulting in a higher current gain.
@@ -124,9 +155,9 @@
                     signals. They find wide-ranging applications in fields such as telecommunications, imaging, 
                     sensing, and more. Understanding the principles and operation of different types of 
                     photodetectors is crucial for harnessing their capabilities effectively.
-                </p>
-            </section>
-            <section class="sections" id="section-2">
+                </div>
+            </div>
+            <div class="cBox" id="section-2">
                 <h1>2. Requirements from Photodetectors</h1>
                 <p>
                     The optical signal is weakened and distorted when it hits the detector. Therefore, the 
@@ -159,8 +190,8 @@
                     <b>Short transit time.</b>
                     <br> <br>
                 </p>
-            </section>
-            <section id="section-3">
+            </div>
+            <div class="cBox" id="section-3">
                 <h1>3. Material Considerations</h1>
                 <p>
                     The material used in the design of photodetectors is a significant concern since it can have a 
@@ -179,7 +210,7 @@
                     into an electrical signal. Materials with high responsivity are desirable for applications that 
                     require high sensitivity.
                     <br> <br>
-                    <b>Dark Current</b>
+                    <b>Dark Current:</b>
                     <br>
                     The dark current of a photodetector is the current that flows through it in the absence of light. 
                     Materials with low dark current are desirable for applications that require low noise levels.
@@ -209,8 +240,8 @@
                     indium gallium arsenide, and mercury cadmium telluride. The choice of material depends on the 
                     specific application requirements and performance characteristics desired.
                 </p>
-            </section>
-            <section id="section-4">
+            </div>
+            <div class="cBox" id="section-4">
                 <h1>4. Photodiode</h1>
                 <p>
                     A photodiode is a p-n junction or pin semiconductor device that consumes light energy to generate 
@@ -233,8 +264,8 @@
                     <br> <br>
                     <p class="figure-description"><b>Fig. 3.1:</b> <i>Photodiode</i></p>
                     <br>
-                    <b>4.1. Characteristics of a good photodiode are:</b>
-                    <br>
+                </p>
+                <div class="sub-cBox" id="section-4-1"><b>4.1. Characteristics of a good Photodiode:</b> <br>
                     -Photodiodes should be always operated in reverse bias condition.
                     <br>
                     -Applied reverse bias voltage should be low.
@@ -254,9 +285,9 @@
                     -Small Size
                     <br>
                     -Long Lifetime
-                    <br> <br>
-                    <b>4.2. How does a photodiode work?</b>
                     <br>
+                </div>
+                <div class="sub-cBox" id="section-4-2"><b>4.2. How does a photodiode work?</b> <br>
                     A normal P-N junction diode allows a small amount of electric current under reverse bias 
                     condition. To increase the electric current under reverse bias conditions, we need to generate 
                     more minority carriers. 
@@ -279,8 +310,8 @@
                     depletion regions. In photodiodes, we use light or photons as the external energy to generate 
                     charge carriers in depletion regions.
                     <br> <br>
-                    <b>4.3. Photodiode Operation Modes</b>
-                    <br>
+                </div>
+                <div class="sub-cBox" id="section-4-3"><b>4.3. Photodiode Operation Modes</b> <br>
                     A photodiode can be operated in one of the two modes: photovoltaic mode or photoconductive mode. 
                     Operation mode selection of the photodiode depends upon the speed requirements of the application 
                     and the amount of dark current that is tolerable.
@@ -313,9 +344,9 @@
                     voltage increases the depletion width and the potential across it. Due to high potential, the 
                     electron-hole pair flows with maximum speed hitting more atoms in its path resulting in more 
                     photocurrent. Therefore, avalanche mode has high internal gain and responsivity.
-                    <br> <br>
-                    <b>4.4. V-I Characteristics of Photodiode</b>
                     <br>
+                </div>
+                <div class="sub-cBox" id="section-4-4"><b>4.4. V-I Characteristics of Photodiode</b> <br>
                     The VI characteristics curve shows the relationship between the voltage and current of a device. 
                     The horizontal axis or x-axis represents the voltage while the vertical axis or y-axis represents 
                     the current through the device. Given below is the characteristic curve for the photodiode.
@@ -334,8 +365,8 @@
                     called the dark current. By increasing the intensity of light the reverse current increases 
                     linearly.
                     <br> <br>
-                    <b>4.5. Types of Photodiodes</b>
-                    <br>
+                </div>
+                <div class="sub-cBox" id="section-4-5"><b>4.5. Types of Photodiodes</b> <br>
                     The working operation of all types of photodiodes is the same. Different types of photodiodes are 
                     developed based on specific applications. For example, PIN photodiodes are developed to increase 
                     the response speed. PIN photodiodes are used where high response speed is needed.
@@ -537,74 +568,74 @@
                         </tr>
                         <tr>
                             <td>
-                            1. Avalanche diode includes four layers like P+, I, P & N+.
+                            Avalanche diode includes four layers like P+, I, P & N+.
                             </td>
                             <td>
-                            1. PIN diode includes four layers like P+, I & N+.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            2. Response time is very high.
-                            </td>
-                            <td>
-                            2. Response time is very low.
+                            PIN diode includes four layers like P+, I & N+.
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            3. Output current is low.
+                            Response time is very high.
                             </td>
                             <td>
-                            3. The multiplication of carrier current can cause amplifier current value.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            4. Internal gain is 200 dB.
-                            </td>
-                            <td>
-                            4. Internal gain is insignificant.
+                            Response time is very low.
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            5. Sensitiviy is high.
+                            Output current is low.
                             </td>
                             <td>
-                            5. Sensitivity is low.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            6. High noise.
-                            </td>
-                            <td>
-                            6. Low noise.
+                            The multiplication of carrier current can cause amplifier current value.
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            7. The reverse bias voltage is very high.
+                            Internal gain is 200 dB.
                             </td>
                             <td>
-                            7. The reverse bias voltage is very low.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            8. High-temperature stability.
-                            </td>
-                            <td>
-                            8. Low-temperature stability.
+                            Internal gain is insignificant.
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            9. The amplifier is not necessary because of the available gain.
+                            Sensitiviy is high.
                             </td>
                             <td>
-                            9. The amplifier is mandatory due to not available gain.
+                            Sensitivity is low.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            High noise.
+                            </td>
+                            <td>
+                            Low noise.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            The reverse bias voltage is very high.
+                            </td>
+                            <td>
+                            The reverse bias voltage is very low.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            High-temperature stability.
+                            </td>
+                            <td>
+                            Low-temperature stability.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            The amplifier is not necessary because of the available gain.
+                            </td>
+                            <td>
+                            The amplifier is mandatory due to not available gain.
                             </td>
                         </tr>
                     </table>
@@ -623,11 +654,11 @@
                     <br> <br>
                     <b>-Disdvantage</b>
                     <br>
-                    Generates high level of noise than a PN photodiode
+                    -Generates high level of noise than a PN photodiode
                     <br> <br>
-                </p>
-            </section>
-            <section id="section-5">
+                </div>
+            </div>
+            <div class="cBox" id="section-5">
                 <h1>5. Photo Transistor</h1>
                 <p>
                     The photodiode and phototransistor both convert the light energy into the electrical energy. A 
@@ -652,8 +683,8 @@
                     <img src="..\Images\FOC-Unit3\6-Photo-Transistor.jpg" alt="Photo Transistor">
                     <br> <br>
                     <p class="figure-description"><b>Fig. 3.6:</b> <i>Photo Transistor Symbol</i></p>
-                    <br>
-                    <b>5.1. Construction:</b>
+                </p>
+                <div class="sub-cBox" id="section-5-1"><b>5.1. Construction:</b> <br>
                     Phototransistors are similar to ordinary transistors, historically made of germanium and silicon. 
                     A lens is placed on the small hole at the collector-base junction to focus light. Nowadays, they 
                     are made of gallium and arsenides for better light sensitivity.
@@ -661,9 +692,8 @@
                     <img src="..\Images\FOC-Unit3\7-Inside-Photo-Transistor.jpg" alt="Inside Photo Transistor">
                     <br> <br>
                     <p class="figure-description"><b>Fig. 3.7:</b> <i>Inside Photo Transistor</i></p>
-                    <br>
-                    <b>5.2. Working:</b>
-                    <br>
+                </div>
+                <div class="sub-cBox" id="section-5-2"><b>5.2. Working:</b> <br>
                     The phototransistor is a semiconductor device composed of semiconductor material. When light 
                     strikes the material, it generates free electrons and holes within the semiconductor, resulting 
                     in a current flow in the base region. The base of the phototransistor is primarily used for 
@@ -675,16 +705,15 @@
                     electric field generates current in the base region. The base current injects the electrons into 
                     the emitter region. However, a significant drawback of phototransistors is their limited 
                     frequency response.
-                    <br> <br>
-                    <b>5.3. Photodiode Vs. Phototransistor:</b>
-                    <br>
-                    Phototransistors have higher current gain and sensitivity compared to photodiodes whereas 
+                </div>
+                <div class="sub-cBox" id="section-5-3"><b>5.3. Photodiode Vs. Phototransistor:</b> <br>
+                    ---TABULAR DIFFERENCE TO BE INSERTED HERE---
+                    <!--Phototransistors have higher current gain and sensitivity compared to photodiodes whereas 
                     photodiodes can be converted into phototransistors by removing their emitter terminals. 
                     Photodiodes have faster response times in nanoseconds but provide microamperes of current, while 
-                    phototransistors have microseconds of response time and milliamperes of current.
-                    <br> <br>
-                    <b>5.4. Photo Transistor Characterstics</b>
-                    <br>
+                    phototransistors have microseconds of response time and milliamperes of current.-->
+                </div>
+                <div class="sub-cBox" id="section-5-4"><b>5.4. Photo Transistor Characterstics</b> <br>
                     -Low-cost visible and near-IR photodetection.
                     <br>
                     -Available with gains ranging from 100 to over 1500.
@@ -695,9 +724,8 @@
                     technology.
                     <br>
                     -Electrical characteristics similar to signal transistors.
-                    <br> <br>
-                    <b>5.5. Advantages of Phototransistor:</b>
-                    <br>
+                </div>
+                <div class="sub-cBox" id="section-5-5"><b>5.5. Advantages of Phototransistor:</b> <br>
                     -Produces higher current than photodiodes.
                     <br>
                     -Relatively inexpensive, simple, and small enough to fit multiple units on a single integrated 
@@ -706,17 +734,16 @@
                     -Very fast, providing nearly instantaneous output.
                     <br>
                     -Capable of producing voltage, unlike photo-resistors.
-                    <br> <br>
-                    <b>5.6. Disadvantages of Phototransistor:</b>
+                </div>
+                <div class="sub-cBox" id="section-5-6"><b>5.6. Disadvantages of Phototransistor:</b>
                     <br>
                     -Silicon-based phototransistors have voltage limitations below 1,000 Volts.
                     <br>
                     -More susceptible to surges, spikes, and electromagnetic energy.
                     <br>
                     -Restricted electron mobility compared to devices like electron tubes.
-                    <br> <br>
-                    <b>5.7. Applications:</b>
-                    <br>
+                </div>
+                <div class="sub-cBox" id="section-5-7"><b>5.7. Applications:</b> <br>
                     -Punch-card readers.
                     <br>
                     -Security systems.
@@ -734,33 +761,31 @@
                     -Level indication.
                     <br>
                     -Counting systems.
-                </p>
-            </section>
-            <section id="section-6">
+                </div>
+            </div>
+            <div class="cBox" id="section-6">
                 <h1>6. Quantum efficiency</h1>
-                <p>
-                    Quantum efficiency (QE) is a key performance parameter used to quantify the efficiency of a 
-                    photodetector in converting incident photons into electric current. It represents the ratio of 
-                    the number of electron-hole pairs generated by absorbed photons to the total number of incident 
-                    photons.
-                    <br> <br>
-                    Mathematically, quantum efficiency (QE) is expressed as:
-                    <br> <br>
-                    QE = (Number of electron-hole pairs generated) / (Number of incident photons)
-                    <br> <br>
-                    A high quantum efficiency indicates that a larger proportion of incident photons are successfully 
-                    converted into electron-hole pairs, resulting in a stronger photocurrent.
-                    <br> <br>
-                    The quantum efficiency of a photodetector is influenced by various factors, including the 
-                    absorption properties of the material, the bandgap energy, and the design of the detector. 
-                    <br> <br>
-                    Quantum efficiency is an essential parameter to consider when selecting or designing a 
-                    photodetector for specific applications. A higher quantum efficiency translates to a more 
-                    sensitive and efficient photodetector, making it suitable for applications where low light levels 
-                    or high detection accuracy are required, such as imaging, spectroscopy, and telecommunications.
-                </p>
-            </section>
-            <section id="section-7">
+                Quantum efficiency (QE) is a key performance parameter used to quantify the efficiency of a 
+                photodetector in converting incident photons into electric current. It represents the ratio of 
+                the number of electron-hole pairs generated by absorbed photons to the total number of incident 
+                photons.
+                <br> <br>
+                Mathematically, quantum efficiency (QE) is expressed as:
+                <br> <br>
+                QE = (Number of electron-hole pairs generated) / (Number of incident photons)
+                <br> <br>
+                A high quantum efficiency indicates that a larger proportion of incident photons are successfully 
+                converted into electron-hole pairs, resulting in a stronger photocurrent.
+                <br> <br>
+                The quantum efficiency of a photodetector is influenced by various factors, including the 
+                absorption properties of the material, the bandgap energy, and the design of the detector. 
+                <br> <br>
+                Quantum efficiency is an essential parameter to consider when selecting or designing a 
+                photodetector for specific applications. A higher quantum efficiency translates to a more 
+                sensitive and efficient photodetector, making it suitable for applications where low light levels 
+                or high detection accuracy are required, such as imaging, spectroscopy, and telecommunications.
+            </div>
+            <div class="cBox" id="section-7">
                 <h1>7. Responsivity</h1>
                 <p>
                     Responsivity is another important parameter used to characterize the performance of a 
@@ -800,9 +825,8 @@
                     <br> <br>
                     In other words, it is measure of the effectiveness of conversion of light power into electric 
                     current. It varies with the wavelength of incident light, applied reverse bias and temperature.
-                </p>
-            </section>
-            <section id="section-8">
+            </div>
+            <div class="cBox" id="section-8">
                 <h1>8. Long Cutoff Wavelength</h1>
                 <p>
                     A cut of the wavelength of any photodetector can be defined as if any particular semiconductor 
@@ -813,14 +837,15 @@
                     Different types of photodetectors have varying cutoff wavelengths based on their operating 
                     principles and the materials used.
                     <br> <br>
-                    Cut off wavelength is determined by band gap energy Eg of a material.
+                    Cut off wavelength is determined by band gap energy E<sub>g</sub> of a material.
                     <br> <br>
-                    Cut of wavelength = hc / Eg  = 1.24 / Eg  
+                    Cut of wavelength = h<sub>c</sub> / E<sub>g</sub>  = 1.24 / E<sub>g</sub>  
                     <br> <br>
-                    Where,
-                    <br> <br>
-                    Eg  = Electron volts (eV) 
-                    <br> <br>
+                    where,
+                    <div class="formula">
+                        E<sub>g</sub>  = Electron volts (eV) 
+                    </div>
+                    <br>
                     A typical value of cut of wavelength for silicon is 1.06 micrometer and germanium is 1.6 
                     micrometer.
                     <br> <br>
@@ -835,8 +860,8 @@
                     detection of light in the desired wavelength range, expanding the range of applications, such as 
                     spectroscopy, telecommunications, remote sensing, and thermal imaging.
                 </p>
-            </section>
-            <section id="section-9">
+            </div>
+            <div class="cBox" id="section-9">
                 <h1>9. Detector Response Time</h1>
                 <p>
                     Detector response time, also referred to as the rise time or the time response, is a crucial 
@@ -862,8 +887,8 @@
                     the other hand, in applications where slower variations in light intensity are expected, response 
                     time may be less critical.
                 </p>
-            </section>
-            <section id="section-10">
+            </div>
+            <div class="cBox" id="section-10">
                 <h1>10. Noise</h1>
                 <p>
                     <b>Noise:</b> 
@@ -871,9 +896,8 @@
                     In a communication system, noise refers to unwanted disturbances that can interfere with the 
                     received signal. In optical fiber communication systems, there are three main types of noise 
                     that can affect the performance: thermal noise, dark current noise, and quantum noise.
-                    <br> <br>
-                    <b>10.1. Thermal Noise:</b>
-                    <br> <br>
+                </p>
+                <div class="sub-cBox" id="section-10-1"><b>10.1. Thermal Noise:</b> <br>
                     Thermal noise arises from the random motion of electrons, which is present at any finite 
                     temperature. 
                     <br> <br>
@@ -882,15 +906,16 @@
                     i<sub>t</sub><sup>2</sup> = 4KTBR
                     <br> <br>
                     where:
-                    <br> <br>
-                    K is Boltzmann's constant,
-                    <br> <br>
-                    T is the absolute temperature,
-                    <br> <br>
-                    B is the post-detection bandwidth of the system.
-                    <br> <br>
-                    <b>10.2. Dark Noise:</b>
                     <br>
+                    <div class="formula">
+                        K is Boltzmann's constant,
+                        <br>
+                        T is the absolute temperature,
+                        <br>
+                        B is the post-detection bandwidth of the system.
+                    </div>
+                </div>
+                <div class="sub-cBox" id="section-10-2"><b>10.2. Dark Noise:</b> <br>
                     Even when there is no optical power incident on the photodetector, a small reverse leakage 
                     current called dark current still flows through the device terminals. This dark current 
                     contributes to the overall system noise and introduces random fluctuations around the average 
@@ -898,31 +923,32 @@
                     <br> <br>
                     The dark current noise can be expressed as:
                     <br> <br>
-                    i<sub>d</sub><sup>2</sup> = 2eBId
+                    i<sub>d</sub><sup>2</sup> = 2eBI<sub>d</sub>
                     <br> <br>
                     where:
-                    <br> <br>
-                    e is the charge on an electron,
-                    <br> <br>
-                    B is the post-detection bandwidth of the system.
-                    <br> <br>
-                    I<sub>d</sub> is the dark current.
-                    <br> <br>
-                    <b>10.3. Quantum Noise:</b>
-                    <br>
+                    <div class="formula">
+                        e is the charge on an electron,
+                        <br>
+                        B is the post-detection bandwidth of the system.
+                        <br>
+                        I<sub>d</sub> is the dark current.
+                    </div>
+                </div>
+                <div class="sub-cBox" id="section-10-3"><b>10.3. Quantum Noise:</b> <br>
                     Quantum noise, also known as shot noise, is caused by the discrete nature of electrons. It arises 
                     from the statistical production and collection of photoelectrons. The quantum noise can be given by:
                     <br> <br>
-                    i<sub>s</sub><sup>2</sup> = 2eBIp
+                    i<sub>s</sub><sup>2</sup> = 2eBI<sub>p</sub>
                     <br> <br>
                     where:
-                    <br> <br>
-                    e is the charge on an electron,
-                    <br> <br>
-                    B is the post-detection bandwidth of the system,
-                    <br> <br>
-                    Ip is the photocurrent.
-                    <br> <br>
+                    <div class="formula">
+                        e is the charge on an electron,
+                        <br>
+                        B is the post-detection bandwidth of the system,
+                        <br>
+                        I<sub>p</sub> is the photocurrent.
+                    </div>
+                    <br>
                     In addition to these types of noise, other factors such as amplifier noise, receiver noise, and 
                     environmental interference can also contribute to the overall noise in an optical fiber 
                     communication system.
@@ -931,9 +957,9 @@
                     and high-quality communication. Various techniques such as signal amplification, filtering, and 
                     advanced modulation schemes are employed to mitigate the impact of noise and enhance the 
                     performance of optical fiber communication systems.
-                </p>
-            </section>
-            <section id="section-11">
+                </div>
+            </div>
+            <div class="cBox" id="section-11">
                 <h1>11. Receiver Sensitivity</h1>
                 <p>
                     Receiver sensitivity in photodetectors refers to the minimum optical power level required for 
@@ -959,21 +985,25 @@
                     performance. It enables reliable and accurate detection of optical signals in various applications 
                     such as optical fiber communications, remote sensing, and imaging systems.
                 </p>
-            </section>
-            <section id="section-12">
+            </div>
+            <div class="cBox" id="section-12">
                 <h1>12. Bit Error Rate</h1>
                 <p>
                     It is defined as the ratio of the number of bits received in error to the total number of bits 
                     transmitted.
                     <br> <br>
-                    BER=Ne/Nt
+                    BER=N<sub>e</sub>/N<sub>t</sub>
                     <br> <br>
-                    N<sub>e</sub> = the number of errors
-                    <br> <br>
-                    N<sub>t</sub>=total number of transmitted pulses during time ‘t’.
-                    <br> <br>
-                    It is the probability of a bit being incorrectly received.
-                    <br> <br>
+                    where,
+                    <br>
+                    <div class="formula">
+                        N<sub>e</sub> = the number of errors
+                        <br>
+                        N<sub>t</sub>=total number of transmitted pulses during time ‘t’.
+                        <br>
+                        It is the probability of a bit being incorrectly received.
+                    </div>
+                    <br>
                     BER is expressed as a percentage or as a decimal number between 0 and 1.For example, a BER of 
                     0.01means that for every 100 bits transmitted,one bit is received in error.
                     <br> <br>
@@ -993,22 +1023,22 @@
                     occurrence of errors in the received signal. Minimizing noise through proper design, noise 
                     reduction techniques, and optimizing the signal-to-noise ratio (SNR) helps to reduce the BER.
                 </p>
-            </section>
+            </div>
         </main>
     </div>
     <footer>
         <div class="socialMedia">
-            <a href="https://www.instagram.com/"><img src="..\Vectors\instagram-icon.svg" class="icon" alt="Insta-Logo" style="width: 25px; height: 25px;"></a>
-            <a href="https://www.facebook.com/"><img src="..\Vectors\facebook-icon.svg" class="icon" alt="Fb-Logo" style="width: 25px; height: 25px;"></a>
-            <a href="https://telegram.org/"><img src="..\Vectors\telegram-icon.svg" class="icon" alt="Telegram-Logo" style="width: 25px; height: 25px;"></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTHVwtJVsGjXHjQGTFLgpdDsQxlzJQntxQnzvFxzzCwjpqGzmCttxTBlqqWbbzBLCrVTsB"><img src="..\Vectors\gmail-icon.svg" class="icon" alt="GMail-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://www.instagram.com/"><img src="../../../static/assets/icons/instagram-icon.svg" class="icon" alt="Insta-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://www.facebook.com/"><img src="../../../static/assets/icons/facebook-icon.svg" class="icon" alt="Fb-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://telegram.org/"><img src="../../../static/assets/icons/telegram-icon.svg" class="icon" alt="Telegram-Logo" style="width: 25px; height: 25px;"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTHVwtJVsGjXHjQGTFLgpdDsQxlzJQntxQnzvFxzzCwjpqGzmCttxTBlqqWbbzBLCrVTsB"><img src="../../../static/assets/icons/gmail-icon.svg" class="icon" alt="GMail-Logo" style="width: 25px; height: 25px;"></a>
         </div>
         <div class="redirects">
             <ul>
             <b>Insight</b>
                 <div class="footer-list">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../pages/contact-us.html">Contact</a></li>
+                    <li><a href="../../../pages/about-us.html">About Us</a></li>
                     <li><a href="#">Feedback</a></li>
                     <li><a href="#">Credits</a></li>
                 </div>
@@ -1016,8 +1046,8 @@
             <ul>
                 <b>Discover</b>
                 <div class="footer-list">
-                    <li><a href="#">Privacy & Policy</a></li>                        
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="../../../pages/privacy-policy.html">Privacy & Policy</a></li>                        
+                    <li><a href="../../../pages/terms-of-service.html">Terms of Service</a></li>
                     <li><a href="#">Newsletter</a></li>
                     <li><a href="#">Forums</a></li>
                 </div>
@@ -1025,6 +1055,6 @@
         </div>
         <p class="copyright">&copy CrammerBuddy 2023, All Rights Reserved.</p>
     </footer>
-    <script src="subject-units.js"></script>
+    <script src="../../../static/scripts/subject-units.js"></script>
 </body>
 </html>

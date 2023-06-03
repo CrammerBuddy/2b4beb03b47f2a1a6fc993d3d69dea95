@@ -80,14 +80,26 @@ img{
     text-align: center;
 }
 main{
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
 }
-
 .cBox{
-    padding: 20px 28px 0px 30px;
+    padding: 30px 28px 0px 30px;
 }
 
 .sub-cBox{
-    padding: 20px 28px 0px 0px;
+    padding: 30px 28px 0px 0px;
+}
+.formula{
+    padding-left: 30px;
+}
+table, td, th{
+    margin-left: 20px;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border-collapse: collapse;
+}
+th{
+    font-size: larger;
 }
