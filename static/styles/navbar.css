@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --nav-bg-color: rgb(209, 244, 250);
+    --nav-text-color: rgb(103, 17, 57);
+    --active-and-hover-color: rgb(2, 84, 100);
+}
+nav{
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    background-color: var(--nav-bg-color);
+    box-sizing: border-box;
+    color: var(--nav-text-color);
+    font-family: 'Raleway';
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 8px;
+}
+nav ul li{
+    background: var(--nav-bg-color);
+    margin: 0 5px;
+}
+nav ul li a{                    /* Navbar buttons */
+    color: var(--nav-text-color);
+    text-decoration: none;
+    line-height: 20px;          /* To set the gap between top and text */
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{              /* Navbar Buttons Hover Effect */
+    color: var(--active-and-hover-color);
+    transform: scale(1.5);
+}
+nav a.active{
+    color: var(--active-and-hover-color);
+    pointer-events: none;       /* Removes hover colour change effect */
+}
+nav ul ul{                      /* BE E&Tc Dropdown */
+    position: absolute;
+    top: 80px;
+    border-top: 3px solid var(--active-and-hover-color);
+    border-bottom: 3px solid var(--active-and-hover-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: top 250ms;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li:hover > ul{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{                   /* Dropdown menu option properties */
+    position: relative;
+    margin: 0px;
+    width: 147px;
+    float: none;
+    display: list-item;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+nav ul ul li a{
+    line-height: 50px;
+}

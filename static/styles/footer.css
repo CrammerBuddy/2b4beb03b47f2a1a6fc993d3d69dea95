@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --footer-head-color: rgba(1, 25, 30, 0.7);
+    --footer-list-color: rgba(255, 255, 255, 0.7);
+}
+footer{
+    padding-top: 30px;
+    background-color: rgba(20, 20, 20, 0.7);
+    font-family: 'Quicksand';
+    text-align: center;
+    letter-spacing: 0px;
+}
+.icon{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.icon:hover{
+    transform: scale(1.2);
+    transition: all 150ms;
+}
+.redirects{
+    padding-top: 20px;
+    display: grid;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    grid-template-columns: auto auto;
+
+}
+.redirects ul li{
+    padding-top: 3px;
+}
+.redirects b{
+    font-size: 18px;
+    color: var(--footer-head-color);
+}
+.footer-list{
+    font-size: 16px;
+    list-style: none;
+    padding-top: 15px;
+}
+.footer-list a:hover{
+    font-weight: 1000;
+}
+.redirects ul a{
+    color: var(--footer-list-color);
+    text-decoration: none;
+}
+.copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}

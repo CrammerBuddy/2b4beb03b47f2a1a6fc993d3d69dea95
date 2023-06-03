@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    padding-top: 15vh;
+    background-color: var(--bg-color);
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.image{
+    display: block;
+    margin-right: auto;
+}
+.content{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10fr 5fr 2fr;
+    column-gap: 5px;
+}
+.mission{
+    padding-left: 50px;
+    text-align: left;
+    margin: 5vw;
+}
+.mission h1{
+    font-family: 'Lato';
+    font-size: 6vw;
+    font-weight: 800;
+    color: rgb(2, 84, 100);
+    text-shadow: 3px 3px rgba(19, 66, 113, 0.15);
+    letter-spacing: 5px;
+}
+.tagline{
+    font-family: 'Kanit';
+    font-size: 2vw;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+
+.team {
+    width: 1170px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.team h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 2vw;
+    font-family: 'Raleway';
+}
+.team-title{
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 3vw;
+    font-family: 'Kanit';
+}
+.card {
+    flex-basis: 25%;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 50px  0;
+    background: white;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    background: cyan;
+    transform: scale(1.07);
+    transition: all 150ms;
+}
+.card h2 {
+    font-family: 'Kanit';
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.profile {
+    display: inline-block;
+    background-color: brown;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Lato';
+    cursor: pointer;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 50px;
+}
+.profile:hover {
+    background-color: white;
+    color: #1b1b1b;
+}

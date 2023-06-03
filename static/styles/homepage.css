@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color: rgb(255, 255, 255);
+}
+body{
+    /*background-image: url('background.jpg');
+    background-size: cover;*/
+    padding-top: 15vh;
+    background-color: var(--bg-color);
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Main content begins */
+.image{
+    display: block;
+    margin-right: auto;
+}
+.content{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8fr 2fr 0.5fr;
+    column-gap: 5px;
+}
+.text{
+    text-align: center;
+    margin: 3vw;
+}
+.tagline{
+    font-family: 'Raleway';
+    font-size: 3.5vw;
+    font-weight: 800;
+    color: rgb(2, 84, 100);
+    text-shadow: 3px 3px rgba(19, 66, 113, 0.15);
+}
+.aboutCrammerBuddy{
+    font-family: 'Poppins';
+    font-size: 1.2vw;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+.aboutCrammerBuddy a{
+    text-decoration: none;
+    color:cornflowerblue;
+}
+.exploreButton {
+    background-color: rgb(194, 251, 215);
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    margin-top: 35px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+.exploreButton:hover {
+    box-shadow: rgba(44,187,99,.30) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05);
+}
+/* Main content ends */
+
+
+
+
+
+
+
+
+/*Credits
+<a href="https://www.freepik.com/free-vector/learning-concept-illustration_14230944.htm#query=study&position=0&from_view=search&track=sph">Image by storyset</a> on Freepik
+Icon by <a href='https://iconpacks.net/?utm_source=link-attribution&utm_content=8869'>Iconpacks</a>
+Button by <a href='https://getcssscan.com/css-buttons-examples'></a>*/
