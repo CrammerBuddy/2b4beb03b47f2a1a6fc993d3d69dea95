@@ -9,7 +9,7 @@
     padding:0;
 }
 body{
-    padding-top: 15vh;
+    padding-top: 90px;
     background-color: var(--bg-color);
     user-select: none;
     -webkit-user-select: none;

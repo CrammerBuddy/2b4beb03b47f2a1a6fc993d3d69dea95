@@ -19,6 +19,12 @@ body{
     -ms-user-select: none;
     -moz-user-select: none;
 }
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #1b1b1b;
+}
 .container{
     margin: 0;
     display: grid;

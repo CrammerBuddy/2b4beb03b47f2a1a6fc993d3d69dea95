@@ -22,7 +22,7 @@ body{
 .container{
     margin: 0;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 200px 1fr;
 }
 .leftnav{
     background:rgb(209, 244, 250);

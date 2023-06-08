@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 120px;
+}
+.content{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+}
+.content h1{
+    font-family: 'Kanit';
+    text-align: center;
+    font-size: 40px;
+}
+.content h3{
+    font-family: 'Kanit';
+    text-align: center;
+}
+.content p, ol{
+    font-family: 'Quicksand';
+    font-size: 18px;
+}
+.content a{
+    text-decoration: none;
+    color:blue;
+}
+.list{
+    text-align: justify;
+}
+.update-date{
+    margin-right: 10vw;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: right;
+    font-family: 'Quicksand';
+}
