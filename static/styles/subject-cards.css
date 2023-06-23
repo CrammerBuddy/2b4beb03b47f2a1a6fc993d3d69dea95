@@ -48,6 +48,7 @@ body {
     margin-bottom: 15px;
     text-transform: capitalize;
     color: #1b1b1b;
+    text-align: center;
 }
 .cards h3 {
     padding: 10px 0px;
@@ -83,14 +84,16 @@ body {
     transform: scale(1.05);
     transition: 250ms;
 }
-/*
-@media only screen and (min-width: 300px) and (max-width: 1000px) {
+
+@media screen and (max-width: 1150px) {
   .flex {
-    width: 100%;
+    width: 90%;
+    padding-left: 60px;
+    padding-right: 60px;
     flex-direction: column;
   }
   .cards {
-    margin: 10px;
+    margin: 20px;
   }
 }
-*/
+

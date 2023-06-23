@@ -19,10 +19,27 @@ body{
     -ms-user-select: none;
     -moz-user-select: none;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 .container{
     margin: 0;
     display: grid;
     grid-template-columns: 200px 1fr;
+}
+.container::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/logos/CrammerBuddyLogo.png);
+    background-size: 50%;
+    background-position: 70%, 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .18;
+    z-index: -1;
 }
 .leftnav{
     background:rgb(209, 244, 250);

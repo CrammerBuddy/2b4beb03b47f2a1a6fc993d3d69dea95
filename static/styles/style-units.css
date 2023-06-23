@@ -18,17 +18,37 @@ body{
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+    min-height: 200vh;
 }
-::-webkit-scrollbar{
-    width: 5px;
+body::-webkit-scrollbar{
+    display: none;
 }
-::-webkit-scrollbar-thumb{
-    background: #1b1b1b;
-}
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    height: 5px;
+    background: #7983ff;
+    z-index: 10000;
+  }
 .container{
     margin: 0;
     display: grid;
     grid-template-columns: 300px 1fr;
+}
+.container::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/logos/CrammerBuddyLogo.png);
+    background-size: 50%;
+    background-position: 70%, 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .18;
+    z-index: -1;
 }
 .leftnav{
     background:rgb(209, 244, 250);

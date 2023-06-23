@@ -16,7 +16,7 @@
 }
 nav{
     position: fixed;
-    height: 90px;
+    height: 15vh;
     width: 100%;
     top: 0;
     background-color: var(--nav-bg-color);
@@ -28,6 +28,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 8px 12px;
+}
+.logo{
+    padding-left: 1.5vw;
+    width: 18vw; 
+    height: auto;
 }
 nav ul{
     display: flex;
@@ -43,7 +48,7 @@ nav ul li a{                    /* Navbar buttons */
     color: var(--nav-text-color);
     text-decoration: none;
     line-height: 20px;          /* To set the gap between top and text */
-    font-size: 18px;
+    font-size: 1.4vw;
     font-weight: 500;
     padding: 8px 25px;
     letter-spacing: 2px;
@@ -68,19 +73,29 @@ nav ul ul{                      /* BE E&Tc Dropdown */
     flex-direction: column;
 }
 nav ul li:hover > ul{
-    top: 60px;
+    top: 10vh;
     opacity: 1;
     visibility: visible;
 }
 nav ul ul li{                   /* Dropdown menu option properties */
     position: relative;
     margin: 0px;
-    width: 147px;
+    width: 11.1vw;
     float: none;
     display: list-item;
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 nav ul ul li a{
-    line-height: 50px;
+    line-height: 8vh;
+}
+@media screen and (max-width:1080px) {
+    nav{
+        position: fixed;
+        height: 8vh;
+    }    
+    .logo{
+        width: 15vh;
+        
+    }
 }
