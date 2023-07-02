@@ -9,25 +9,32 @@
     padding: 0;
 }
 body{
-    padding-top: 120px;
+    padding-top: 20vh;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .content{
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 50px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding-bottom: 4vh;
 }
 .content h1{
     font-family: 'Kanit';
     text-align: center;
-    font-size: 40px;
+    font-size: 3vw;
 }
 .content h3{
     font-family: 'Kanit';
     text-align: center;
+    font-size: 1.3vw;
 }
 .content p, ol{
     font-family: 'Quicksand';
-    font-size: 18px;
+    font-size: 1.5vw;
+}
+.content ol li{
+    padding-top: 2vh;
 }
 .content a{
     text-decoration: none;
@@ -37,9 +44,27 @@ body{
     text-align: justify;
 }
 .update-date{
-    margin-right: 10vw;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    margin-right: 8vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     text-align: right;
+    font-size: 1.2vw;
     font-family: 'Quicksand';
+}
+@media screen and (max-width:1080px) {
+    body{
+        padding-top: 10vh;
+    }
+    .content h1{
+        font-size: 7vw;
+    }
+    .content h3{
+        font-size: 5vw;
+    }
+    .content p, ol{
+        font-size: 4vw;
+    }
+    .update-date{
+        font-size: 2vw;
+    }
 }

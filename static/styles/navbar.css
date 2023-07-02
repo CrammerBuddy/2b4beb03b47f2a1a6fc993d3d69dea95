@@ -73,7 +73,7 @@ nav ul ul{                      /* BE E&Tc Dropdown */
     flex-direction: column;
 }
 nav ul li:hover > ul{
-    top: 10vh;
+    top: 9vh;
     opacity: 1;
     visibility: visible;
 }
@@ -96,6 +96,5 @@ nav ul ul li a{
     }    
     .logo{
         width: 15vh;
-        
     }
 }

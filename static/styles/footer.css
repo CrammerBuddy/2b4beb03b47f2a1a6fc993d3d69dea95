@@ -11,7 +11,7 @@
 :root{
     --footer-head-color: rgb(125, 231, 249);
     --footer-list-color: rgba(255, 255, 255, 0.7);
-    --footer-bg-color: rgba(2, 2, 24, 0.98); /* rgb(32, 33, 36); */
+    --footer-bg-color: rgba(2, 2, 24, 0.98);    /* rgb(32, 33, 36); */
 }
 footer{
     padding-top: 40px;
@@ -24,8 +24,8 @@ footer{
 .icon{
     padding-left: 2%;
     padding-right: 2%;
-    height: 28px;
-    width: 28px;
+    width: 2vw;
+    height: auto;
 }
 .icon:hover{
     transform: scale(1.2);
@@ -101,7 +101,7 @@ footer{
 
 @media screen and (max-width: 512px) {
     footer{
-        height: 18vh;
+        height: 20vh;
         padding-top: 4vh;
     }
     .icon{

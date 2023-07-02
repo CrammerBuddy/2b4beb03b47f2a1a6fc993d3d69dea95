@@ -62,9 +62,9 @@ body::-webkit-scrollbar{
 }
 .leftnav ol{
     font-size: 16px;
-    padding:0 0 0 26px;
-    margin:0;
-    position:sticky;
+    padding-left: 26px;
+    margin: 0px;
+    position: sticky;
     top: 100px;
     margin-bottom: 80px;
 }

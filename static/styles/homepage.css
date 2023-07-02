@@ -48,6 +48,7 @@ body::-webkit-scrollbar{
 }
 .tagline{
     font-family: 'Raleway';
+    letter-spacing: 1px;
     font-size: 3.5vw;
     font-weight: 800;
     color: rgb(2, 84, 100);
@@ -154,7 +155,10 @@ body::-webkit-scrollbar{
     }
     .content{
         height: 68vh;
-        padding-bottom: 5vh;
+        padding-bottom: 6vh;
+    }
+    .tagline{
+        font-size: 5vw;
     }
     .aboutCrammerBuddy{
         padding-bottom: 1vh;
