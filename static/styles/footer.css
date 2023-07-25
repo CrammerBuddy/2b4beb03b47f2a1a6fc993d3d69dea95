@@ -14,7 +14,7 @@
     --footer-bg-color: rgba(2, 2, 24, 0.98);    /* rgb(32, 33, 36); */
 }
 footer{
-    padding-top: 40px;
+    padding-top: 5vh;
     background-color: var(--footer-bg-color);
     font-family: 'Quicksand';
     text-align: center;

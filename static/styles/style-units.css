@@ -14,10 +14,10 @@ body{
     background: white;
     color: black;
     font-family: 'Poppins';
-    user-select: none;
+    /*user-select: none;            REMOVE THIS COMMENT AFTER CONTENT IS READY
     -webkit-user-select: none;
     -ms-user-select: none;
-    -moz-user-select: none;
+    -moz-user-select: none;*/
     min-height: 200vh;
 }
 body::-webkit-scrollbar{
@@ -114,7 +114,7 @@ main{
 }
 
 .sub-cBox{
-    padding: 30px 28px 0px 0px;
+    padding: 30px 28px 0px 20px;
 }
 .formula{
     padding-left: 30px;
