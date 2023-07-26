@@ -11,21 +11,44 @@
 body{
     padding-top: 15vh;
     text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
 }
 body::-webkit-scrollbar{
     display: none;
 }
 .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    margin: 5vh;
+
+    grid-template-columns: 4fr 2.8fr;
+    padding-right: 3%;
+    padding-bottom: 1vh;
+    column-gap: 5px;
+}
+.image{
+    width: 35vw;
+    height: auto;
+}
+.text{
+    align-items: center;
 }
 .soon{
-    font-variant: small-caps;
-    font-family: 'Quicksand';
-    font-size: 7vh;
+    font-family: 'Blacksword';
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 10vh;
+    color: #1FB299;
+    text-shadow: 3px 3px rgba(13, 49, 84, 0.2);
 }
 .message{
-    font-family: 'Quicksand';
-    font-size: 3vh;
-    font-weight: 100;
+    padding-top: 2vh;
+    font-family: 'Raleway';
+    font-size: 4vh;
+    font-weight: 500;
+    color: #001C30;
 }
